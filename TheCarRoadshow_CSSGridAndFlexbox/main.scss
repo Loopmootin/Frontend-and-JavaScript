@@ -373,6 +373,7 @@ footer {
     }
 
     article {
+        margin-top: 30px;
         margin-bottom: 40px;
 
         .car-display {
@@ -391,7 +392,7 @@ footer {
             h2:last-of-type {
                 grid-column: 1/4;
                 grid-row: 3;
-                margin-top: 40px;
+                margin-top: 30px;
             }
 
             .upcomming {

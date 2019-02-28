@@ -427,6 +427,7 @@ footer .some i {
     font-size: 3em;
   }
   article {
+    margin-top: 30px;
     margin-bottom: 40px;
   }
   article .car-display {
@@ -452,7 +453,7 @@ footer .some i {
     grid-column: 1/4;
     -ms-grid-row: 3;
     grid-row: 3;
-    margin-top: 40px;
+    margin-top: 30px;
   }
   article .show-info .upcomming {
     -ms-grid-column: 1;
