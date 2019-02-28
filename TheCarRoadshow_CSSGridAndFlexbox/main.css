@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  color: #333;
 }
 
 body {
@@ -154,10 +155,27 @@ article h2 {
   font-family: 'Roboto Slab', sans-serif;
   text-align: center;
   letter-spacing: 1px;
+  color: #333;
+  position: relative;
 }
 
-article h2 ::before, article h2 ::after {
-  content: "-";
+article h2:before,
+article h2:after {
+  content: "";
+  margin: 0 5px;
+  font-size: 2em;
+  width: 18px;
+  border-bottom: 3px solid #333;
+  position: absolute;
+  margin-top: 14px;
+}
+
+article h2:before {
+  margin-left: -35px;
+}
+
+article h2:after {
+  margin-left: 15px;
 }
 
 article .car-display {
@@ -401,7 +419,7 @@ footer .some i {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   header {
     height: 40vh;
   }

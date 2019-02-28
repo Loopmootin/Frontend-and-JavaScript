@@ -12,6 +12,7 @@ $footer: #222;
     margin: 0;
     padding: 0;
     border: 0;
+    color: $text;
 }
 
 body {
@@ -141,9 +142,27 @@ article {
         sans-serif;
         text-align: center;
         letter-spacing: 1px;
-        ::before, ::after {
-            content: "-";
-        }
+        color: $text;
+        position: relative;
+    }
+
+    h2:before,
+    h2:after {
+        content: "";
+        margin: 0 5px;
+        font-size: 2em;
+        width: 18px;
+        border-bottom: 3px solid $text;
+        position: absolute;
+        margin-top: 14px;
+    }
+
+    h2:before {
+        margin-left: -35px;
+    }
+
+    h2:after {
+        margin-left: 15px;
     }
 
     .car-display {
@@ -343,7 +362,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
     header {
         height: 40vh;
         .navbar {
